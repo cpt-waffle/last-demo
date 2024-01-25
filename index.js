@@ -17,6 +17,13 @@ const sum = function(array) {
   }
   
   return result;
+  
+  // Maintance > Performance
+
+  // BAD CODING GOLF SOLUTION DO NOT USE
+  // const result = array.map( n => Number(n)).reduce((acc, curr) =>  acc + curr, 0);
+  // return result;
+
 }
 
 //  Test Cases -----------------------------------------
