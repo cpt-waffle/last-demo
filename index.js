@@ -7,7 +7,7 @@
 // Unknowns
 
 // What is a command line arguments?
-console.log(process.argv); // the arguments start from 2nd index of the array
+// console.log(process.argv); // the arguments start from 2nd index of the array
 // How do i get them?
 // return a number ?
 
@@ -24,8 +24,13 @@ const array = process.argv;
 //          [1,2,3,4,5,6,7,8]
 // index     0 1 2 3 4 
 
-console.log("loop")
+console.log("loop");
+let sum = 0;
 for (let i = 2; i < array.length; i++) {
-  console.log(i);
+  // console.log(i);
+  // +array[i] shorthand
+  sum = sum + Number(array[i]);
   console.log(array[i]);
 }
+
+console.log(sum);
