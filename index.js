@@ -16,3 +16,16 @@ console.log(process.argv); // the arguments start from 2nd index of the array
 // adding multiple numbers ( probably an array ) loop through numbers and use the + command
 
 // cntr + / or cmd + /
+
+
+// looping through command line arguments
+
+const array = process.argv;
+//          [1,2,3,4,5,6,7,8]
+// index     0 1 2 3 4 
+
+console.log("loop")
+for (let i = 2; i < array.length; i++) {
+  console.log(i);
+  console.log(array[i]);
+}
