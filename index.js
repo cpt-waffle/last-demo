@@ -19,18 +19,22 @@
 
 
 // looping through command line arguments
-
-const array = process.argv;
-//          [1,2,3,4,5,6,7,8]
-// index     0 1 2 3 4 
-
-console.log("loop");
-let sum = 0;
-for (let i = 2; i < array.length; i++) {
-  // console.log(i);
-  // +array[i] shorthand
-  sum = sum + Number(array[i]);
-  console.log(array[i]);
+const sum = function() {
+  const array = process.argv;
+  //          [1,2,3,4,5,6,7,8]
+  // index     0 1 2 3 4 
+  
+  console.log("loop");
+  let result = 0;
+  for (let i = 2; i < array.length; i++) {
+    // console.log(i);
+    // +array[i] shorthand
+    result = result + Number(array[i]);
+    console.log(array[i]);
+  }
+  
+  return result;
 }
 
-console.log(sum);
+const value = sum();
+console.log('the sum is ', value);
